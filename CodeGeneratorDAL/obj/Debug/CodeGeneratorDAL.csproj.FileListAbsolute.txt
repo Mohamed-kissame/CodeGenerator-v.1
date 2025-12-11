@@ -1,0 +1,13 @@
+C:\Users\mkiss\OneDrive\Bureau\Projects\CodeGenerator\CodeGeneratorDAL\bin\Debug\CodeGeneratorDAL.exe.config
+C:\Users\mkiss\OneDrive\Bureau\Projects\CodeGenerator\CodeGeneratorDAL\bin\Debug\CodeGeneratorDAL.exe
+C:\Users\mkiss\OneDrive\Bureau\Projects\CodeGenerator\CodeGeneratorDAL\bin\Debug\CodeGeneratorDAL.pdb
+C:\Users\mkiss\OneDrive\Bureau\Projects\CodeGenerator\CodeGeneratorDAL\bin\Debug\Guna.UI2.dll
+C:\Users\mkiss\OneDrive\Bureau\Projects\CodeGenerator\CodeGeneratorDAL\obj\Debug\CodeGeneratorDAL.csproj.AssemblyReference.cache
+C:\Users\mkiss\OneDrive\Bureau\Projects\CodeGenerator\CodeGeneratorDAL\obj\Debug\CodeGeneratorDAL.Login.resources
+C:\Users\mkiss\OneDrive\Bureau\Projects\CodeGenerator\CodeGeneratorDAL\obj\Debug\CodeGeneratorDAL.Properties.Resources.resources
+C:\Users\mkiss\OneDrive\Bureau\Projects\CodeGenerator\CodeGeneratorDAL\obj\Debug\CodeGeneratorDAL.csproj.GenerateResource.cache
+C:\Users\mkiss\OneDrive\Bureau\Projects\CodeGenerator\CodeGeneratorDAL\obj\Debug\CodeGeneratorDAL.csproj.CoreCompileInputs.cache
+C:\Users\mkiss\OneDrive\Bureau\Projects\CodeGenerator\CodeGeneratorDAL\obj\Debug\CodeGene.A309D076.Up2Date
+C:\Users\mkiss\OneDrive\Bureau\Projects\CodeGenerator\CodeGeneratorDAL\obj\Debug\CodeGeneratorDAL.exe
+C:\Users\mkiss\OneDrive\Bureau\Projects\CodeGenerator\CodeGeneratorDAL\obj\Debug\CodeGeneratorDAL.pdb
+C:\Users\mkiss\OneDrive\Bureau\Projects\CodeGenerator\CodeGeneratorDAL\obj\Debug\CodeGeneratorDAL.exe.config
