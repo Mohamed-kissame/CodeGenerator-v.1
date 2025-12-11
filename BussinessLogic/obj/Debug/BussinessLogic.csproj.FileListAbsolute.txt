@@ -1,0 +1,9 @@
+C:\Users\mkiss\OneDrive\Bureau\Projects\CodeGenerator\BussinessLogic\bin\Debug\BussinessLogic.dll
+C:\Users\mkiss\OneDrive\Bureau\Projects\CodeGenerator\BussinessLogic\bin\Debug\BussinessLogic.pdb
+C:\Users\mkiss\OneDrive\Bureau\Projects\CodeGenerator\BussinessLogic\bin\Debug\DataSet.dll
+C:\Users\mkiss\OneDrive\Bureau\Projects\CodeGenerator\BussinessLogic\bin\Debug\DataSet.pdb
+C:\Users\mkiss\OneDrive\Bureau\Projects\CodeGenerator\BussinessLogic\obj\Debug\BussinessLogic.csproj.AssemblyReference.cache
+C:\Users\mkiss\OneDrive\Bureau\Projects\CodeGenerator\BussinessLogic\obj\Debug\BussinessLogic.csproj.CoreCompileInputs.cache
+C:\Users\mkiss\OneDrive\Bureau\Projects\CodeGenerator\BussinessLogic\obj\Debug\Bussines.273F0448.Up2Date
+C:\Users\mkiss\OneDrive\Bureau\Projects\CodeGenerator\BussinessLogic\obj\Debug\BussinessLogic.dll
+C:\Users\mkiss\OneDrive\Bureau\Projects\CodeGenerator\BussinessLogic\obj\Debug\BussinessLogic.pdb

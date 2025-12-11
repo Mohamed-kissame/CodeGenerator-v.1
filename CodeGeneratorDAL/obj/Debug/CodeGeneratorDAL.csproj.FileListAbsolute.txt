@@ -11,3 +11,8 @@ C:\Users\mkiss\OneDrive\Bureau\Projects\CodeGenerator\CodeGeneratorDAL\obj\Debug
 C:\Users\mkiss\OneDrive\Bureau\Projects\CodeGenerator\CodeGeneratorDAL\obj\Debug\CodeGeneratorDAL.exe
 C:\Users\mkiss\OneDrive\Bureau\Projects\CodeGenerator\CodeGeneratorDAL\obj\Debug\CodeGeneratorDAL.pdb
 C:\Users\mkiss\OneDrive\Bureau\Projects\CodeGenerator\CodeGeneratorDAL\obj\Debug\CodeGeneratorDAL.exe.config
+C:\Users\mkiss\OneDrive\Bureau\Projects\CodeGenerator\CodeGeneratorDAL\bin\Debug\BussinessLogic.dll
+C:\Users\mkiss\OneDrive\Bureau\Projects\CodeGenerator\CodeGeneratorDAL\bin\Debug\DataSet.dll
+C:\Users\mkiss\OneDrive\Bureau\Projects\CodeGenerator\CodeGeneratorDAL\bin\Debug\BussinessLogic.pdb
+C:\Users\mkiss\OneDrive\Bureau\Projects\CodeGenerator\CodeGeneratorDAL\bin\Debug\DataSet.pdb
+C:\Users\mkiss\OneDrive\Bureau\Projects\CodeGenerator\CodeGeneratorDAL\obj\Debug\CodeGeneratorDAL.CodeGenerator.resources

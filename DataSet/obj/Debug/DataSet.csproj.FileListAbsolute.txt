@@ -1,0 +1,6 @@
+C:\Users\mkiss\OneDrive\Bureau\Projects\CodeGenerator\DataSet\bin\Debug\DataSet.dll
+C:\Users\mkiss\OneDrive\Bureau\Projects\CodeGenerator\DataSet\bin\Debug\DataSet.pdb
+C:\Users\mkiss\OneDrive\Bureau\Projects\CodeGenerator\DataSet\obj\Debug\DataSet.csproj.AssemblyReference.cache
+C:\Users\mkiss\OneDrive\Bureau\Projects\CodeGenerator\DataSet\obj\Debug\DataSet.csproj.CoreCompileInputs.cache
+C:\Users\mkiss\OneDrive\Bureau\Projects\CodeGenerator\DataSet\obj\Debug\DataSet.dll
+C:\Users\mkiss\OneDrive\Bureau\Projects\CodeGenerator\DataSet\obj\Debug\DataSet.pdb
