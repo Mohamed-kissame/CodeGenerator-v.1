@@ -66,6 +66,7 @@ namespace CodeGeneratorDAL
 
             if (connection.ServerConnected())
             {
+                LoginInfo.Set(connection);
                 this.Hide();
                 CodeGenerator Start = new CodeGenerator(this);
                 Start.ShowDialog();

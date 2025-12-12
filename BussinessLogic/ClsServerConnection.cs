@@ -17,7 +17,7 @@ namespace BussinessLogic
         public string Password { get; set; }
 
 
-        public ClsServerConnection()
+        private ClsServerConnection()
         {
 
             this.ServerName = null;
