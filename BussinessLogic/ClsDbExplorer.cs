@@ -11,6 +11,25 @@ namespace BussinessLogic
     public class ClsDbExplorer
     {
 
+        public string DbName { get; set; }
+
+        public string TableName { get; set; }
+
+        public ClsDbExplorer()
+        {
+
+            this.DbName = null;
+            this.TableName = null;
+        }
+
+        public ClsDbExplorer(string dbName , string tableName)
+        {
+
+            this.DbName = dbName;
+            this.TableName = tableName;
+        }
+
+
         public static DataTable Databses()
         {
 
@@ -22,6 +41,11 @@ namespace BussinessLogic
         {
 
             return ClsDatabaseExplorer.GetTables(DbName);
+        }
+
+        public static DataTable TableInformation(string DbNme , string Table)
+        {
+            return ClsDatabaseExplorer.GetTableInformation(DbNme, Table);
         }
 
     }

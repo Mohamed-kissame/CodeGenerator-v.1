@@ -26,6 +26,36 @@ namespace CodeGeneratorDAL
         private void Login_Load(object sender, EventArgs e)
         {
             ServerName.Focus();
+
+
+            string Servername = null, UserName = null, Password = null;
+
+            if(LoginInfo.GetStoredInfo(ref Servername , ref UserName , ref Password))
+            {
+
+                if(Servername == ".")
+                {
+
+                    checkLoaclHost.Checked = true;
+
+                }
+                else
+                {
+                    ServerName.Text = Servername;
+                }
+
+
+                Username.Text = UserName;
+                txtPassword.Text = Password;
+                checkRememberMe.Checked = true;
+
+            }
+            else
+            {
+                checkRememberMe.Checked = false;
+
+            }
+
         }
 
         private void ValideFiled(Guna2TextBox BoxText , CancelEventArgs e)
@@ -66,12 +96,23 @@ namespace CodeGeneratorDAL
 
             if (connection.ServerConnected())
             {
-                LoginInfo.Set(connection);
+                if (checkRememberMe.Checked)
+                {
+
+                    LoginInfo.RememberLoginServerInfo(ServerName.Text.Trim(), Username.Text.Trim(), txtPassword.Text.Trim());
+
+                }
+
+                else
+                {
+                    LoginInfo.RememberLoginServerInfo("", "", "");
+                }
+
+
+                    LoginInfo.Set(connection);
                 this.Hide();
                 CodeGenerator Start = new CodeGenerator(this);
                 Start.ShowDialog();
-
-
             }
 
             else

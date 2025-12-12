@@ -39,12 +39,13 @@
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.checkLoaclHost = new Guna.UI2.WinForms.Guna2CheckBox();
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.ServerName = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.Username = new Guna.UI2.WinForms.Guna2TextBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.checkRememberMe = new Guna.UI2.WinForms.Guna2CheckBox();
             this.guna2Panel1.SuspendLayout();
             this.guna2ShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -126,6 +127,7 @@
             // guna2ShadowPanel1
             // 
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel1.Controls.Add(this.checkRememberMe);
             this.guna2ShadowPanel1.Controls.Add(this.checkLoaclHost);
             this.guna2ShadowPanel1.Controls.Add(this.txtPassword);
             this.guna2ShadowPanel1.Controls.Add(this.ServerName);
@@ -160,10 +162,6 @@
             this.checkLoaclHost.UncheckedState.BorderThickness = 0;
             this.checkLoaclHost.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.checkLoaclHost.CheckedChanged += new System.EventHandler(this.checkLoaclHost_CheckedChanged);
-            // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
             // 
             // txtPassword
             // 
@@ -254,6 +252,10 @@
             this.Username.TabIndex = 2;
             this.Username.Validating += new System.ComponentModel.CancelEventHandler(this.Username_Validating);
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.FillColor = System.Drawing.Color.Transparent;
@@ -266,8 +268,28 @@
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
             // 
+            // checkRememberMe
+            // 
+            this.checkRememberMe.AutoSize = true;
+            this.checkRememberMe.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.checkRememberMe.CheckedState.BorderRadius = 0;
+            this.checkRememberMe.CheckedState.BorderThickness = 0;
+            this.checkRememberMe.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.checkRememberMe.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkRememberMe.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.checkRememberMe.Location = new System.Drawing.Point(240, 213);
+            this.checkRememberMe.Name = "checkRememberMe";
+            this.checkRememberMe.Size = new System.Drawing.Size(107, 19);
+            this.checkRememberMe.TabIndex = 9;
+            this.checkRememberMe.Text = "RememberMe";
+            this.checkRememberMe.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.checkRememberMe.UncheckedState.BorderRadius = 0;
+            this.checkRememberMe.UncheckedState.BorderThickness = 0;
+            this.checkRememberMe.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            // 
             // Login
             // 
+            this.AcceptButton = this.guna2Button1;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(917, 429);
@@ -309,6 +331,7 @@
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel1;
         private Guna.UI2.WinForms.Guna2CheckBox checkLoaclHost;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private Guna.UI2.WinForms.Guna2CheckBox checkRememberMe;
     }
 }
 

@@ -64,7 +64,7 @@
     <Compile Include="Connect To Server\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="LoginInfo.cs" />
+    <Compile Include="HelpClasses\LoginInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CodeGenerator.resx">
@@ -135,6 +135,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\databases.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

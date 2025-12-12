@@ -3,36 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\mkiss\\OneDrive\\Bureau\\Projects\\CodeGenerator\\CodeGeneratorDAL\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{353F32D8-F24A-4C9C-AC9E-C1E4884D3A72}|CodeGeneratorDAL.csproj|C:\\Users\\mkiss\\OneDrive\\Bureau\\Projects\\CodeGenerator\\CodeGeneratorDAL\\codegenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{353F32D8-F24A-4C9C-AC9E-C1E4884D3A72}|CodeGeneratorDAL.csproj|C:\\Users\\mkiss\\OneDrive\\Bureau\\Projects\\CodeGenerator\\CodeGeneratorDAL\\codegenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{353F32D8-F24A-4C9C-AC9E-C1E4884D3A72}|CodeGeneratorDAL.csproj|solutionrelative:codegenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{353F32D8-F24A-4C9C-AC9E-C1E4884D3A72}|CodeGeneratorDAL.csproj|c:\\users\\mkiss\\onedrive\\bureau\\projects\\codegenerator\\codegeneratordal\\codegenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{353F32D8-F24A-4C9C-AC9E-C1E4884D3A72}|CodeGeneratorDAL.csproj|solutionrelative:codegenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{811C095C-9028-40DE-B132-94539B9BDA2E}|..\\DataSet\\DataSet.csproj|c:\\users\\mkiss\\onedrive\\bureau\\projects\\codegenerator\\dataset\\clsdatabaseexplorer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{353F32D8-F24A-4C9C-AC9E-C1E4884D3A72}|CodeGeneratorDAL.csproj|C:\\Users\\mkiss\\OneDrive\\Bureau\\Projects\\CodeGenerator\\CodeGeneratorDAL\\codegenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{353F32D8-F24A-4C9C-AC9E-C1E4884D3A72}|CodeGeneratorDAL.csproj|solutionrelative:codegenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{353F32D8-F24A-4C9C-AC9E-C1E4884D3A72}|CodeGeneratorDAL.csproj|c:\\users\\mkiss\\onedrive\\bureau\\projects\\codegenerator\\codegeneratordal\\connect to server\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{353F32D8-F24A-4C9C-AC9E-C1E4884D3A72}|CodeGeneratorDAL.csproj|solutionrelative:connect to server\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{353F32D8-F24A-4C9C-AC9E-C1E4884D3A72}|CodeGeneratorDAL.csproj|c:\\users\\mkiss\\onedrive\\bureau\\projects\\codegenerator\\codegeneratordal\\logininfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{353F32D8-F24A-4C9C-AC9E-C1E4884D3A72}|CodeGeneratorDAL.csproj|solutionrelative:logininfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{811C095C-9028-40DE-B132-94539B9BDA2E}|..\\DataSet\\DataSet.csproj|c:\\users\\mkiss\\onedrive\\bureau\\projects\\codegenerator\\dataset\\clsconectionstring.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07EC1C4B-8418-4EB9-B6F7-E3A730D40759}|..\\BussinessLogic\\BussinessLogic.csproj|c:\\users\\mkiss\\onedrive\\bureau\\projects\\codegenerator\\bussinesslogic\\clsserverconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{07EC1C4B-8418-4EB9-B6F7-E3A730D40759}|..\\BussinessLogic\\BussinessLogic.csproj|c:\\users\\mkiss\\onedrive\\bureau\\projects\\codegenerator\\bussinesslogic\\clsdbexplorer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{353F32D8-F24A-4C9C-AC9E-C1E4884D3A72}|CodeGeneratorDAL.csproj|C:\\Users\\mkiss\\OneDrive\\Bureau\\Projects\\CodeGenerator\\CodeGeneratorDAL\\connect to server\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{353F32D8-F24A-4C9C-AC9E-C1E4884D3A72}|CodeGeneratorDAL.csproj|solutionrelative:connect to server\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +24,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,59 +48,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LoginInfo.cs",
-              "DocumentMoniker": "C:\\Users\\mkiss\\OneDrive\\Bureau\\Projects\\CodeGenerator\\CodeGeneratorDAL\\LoginInfo.cs",
-              "RelativeDocumentMoniker": "LoginInfo.cs",
-              "ToolTip": "C:\\Users\\mkiss\\OneDrive\\Bureau\\Projects\\CodeGenerator\\CodeGeneratorDAL\\LoginInfo.cs",
-              "RelativeToolTip": "LoginInfo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-12T00:26:38.328Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "ClsDbExplorer.cs",
               "DocumentMoniker": "C:\\Users\\mkiss\\OneDrive\\Bureau\\Projects\\CodeGenerator\\BussinessLogic\\ClsDbExplorer.cs",
               "RelativeDocumentMoniker": "..\\BussinessLogic\\ClsDbExplorer.cs",
               "ToolTip": "C:\\Users\\mkiss\\OneDrive\\Bureau\\Projects\\CodeGenerator\\BussinessLogic\\ClsDbExplorer.cs",
               "RelativeToolTip": "..\\BussinessLogic\\ClsDbExplorer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAAADAAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T23:12:57.956Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ClsDatabaseExplorer.cs",
-              "DocumentMoniker": "C:\\Users\\mkiss\\OneDrive\\Bureau\\Projects\\CodeGenerator\\DataSet\\ClsDatabaseExplorer.cs",
-              "RelativeDocumentMoniker": "..\\DataSet\\ClsDatabaseExplorer.cs",
-              "ToolTip": "C:\\Users\\mkiss\\OneDrive\\Bureau\\Projects\\CodeGenerator\\DataSet\\ClsDatabaseExplorer.cs",
-              "RelativeToolTip": "..\\DataSet\\ClsDatabaseExplorer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T22:40:44.946Z",
+              "WhenOpened": "2025-12-12T17:32:08.962Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "ClsDatabaseExplorer.cs",
+              "DocumentMoniker": "C:\\Users\\mkiss\\OneDrive\\Bureau\\Projects\\CodeGenerator\\DataSet\\ClsDatabaseExplorer.cs",
+              "RelativeDocumentMoniker": "..\\DataSet\\ClsDatabaseExplorer.cs",
+              "ToolTip": "C:\\Users\\mkiss\\OneDrive\\Bureau\\Projects\\CodeGenerator\\DataSet\\ClsDatabaseExplorer.cs",
+              "RelativeToolTip": "..\\DataSet\\ClsDatabaseExplorer.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-12T16:52:45.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "CodeGenerator.cs",
               "DocumentMoniker": "C:\\Users\\mkiss\\OneDrive\\Bureau\\Projects\\CodeGenerator\\CodeGeneratorDAL\\CodeGenerator.cs",
               "RelativeDocumentMoniker": "CodeGenerator.cs",
               "ToolTip": "C:\\Users\\mkiss\\OneDrive\\Bureau\\Projects\\CodeGenerator\\CodeGeneratorDAL\\CodeGenerator.cs*",
               "RelativeToolTip": "CodeGenerator.cs*",
-              "ViewState": "AgIAADQAAAAAAAAAAAAgwEgAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAqwIUAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-11T19:17:45.686Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "CodeGenerator.cs [Design]",
               "DocumentMoniker": "C:\\Users\\mkiss\\OneDrive\\Bureau\\Projects\\CodeGenerator\\CodeGeneratorDAL\\CodeGenerator.cs",
               "RelativeDocumentMoniker": "CodeGenerator.cs",
@@ -127,56 +96,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-11T18:55:13.365Z",
               "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Login.cs",
-              "DocumentMoniker": "C:\\Users\\mkiss\\OneDrive\\Bureau\\Projects\\CodeGenerator\\CodeGeneratorDAL\\Connect To Server\\Login.cs",
-              "RelativeDocumentMoniker": "Connect To Server\\Login.cs",
-              "ToolTip": "C:\\Users\\mkiss\\OneDrive\\Bureau\\Projects\\CodeGenerator\\CodeGeneratorDAL\\Connect To Server\\Login.cs",
-              "RelativeToolTip": "Connect To Server\\Login.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAwwEQAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T17:24:57.506Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ClsConectionString.cs",
-              "DocumentMoniker": "C:\\Users\\mkiss\\OneDrive\\Bureau\\Projects\\CodeGenerator\\DataSet\\ClsConectionString.cs",
-              "RelativeDocumentMoniker": "..\\DataSet\\ClsConectionString.cs",
-              "ToolTip": "C:\\Users\\mkiss\\OneDrive\\Bureau\\Projects\\CodeGenerator\\DataSet\\ClsConectionString.cs",
-              "RelativeToolTip": "..\\DataSet\\ClsConectionString.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T17:02:10.817Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ClsServerConnection.cs",
-              "DocumentMoniker": "C:\\Users\\mkiss\\OneDrive\\Bureau\\Projects\\CodeGenerator\\BussinessLogic\\ClsServerConnection.cs",
-              "RelativeDocumentMoniker": "..\\BussinessLogic\\ClsServerConnection.cs",
-              "ToolTip": "C:\\Users\\mkiss\\OneDrive\\Bureau\\Projects\\CodeGenerator\\BussinessLogic\\ClsServerConnection.cs",
-              "RelativeToolTip": "..\\BussinessLogic\\ClsServerConnection.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAYwBIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T16:57:40.221Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Login.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\mkiss\\OneDrive\\Bureau\\Projects\\CodeGenerator\\CodeGeneratorDAL\\Connect To Server\\Login.cs",
-              "RelativeDocumentMoniker": "Connect To Server\\Login.cs",
-              "ToolTip": "C:\\Users\\mkiss\\OneDrive\\Bureau\\Projects\\CodeGenerator\\CodeGeneratorDAL\\Connect To Server\\Login.cs [Design]",
-              "RelativeToolTip": "Connect To Server\\Login.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T03:34:47.035Z"
             }
           ]
         }
