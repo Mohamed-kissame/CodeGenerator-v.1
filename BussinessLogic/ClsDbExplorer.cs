@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using DataSet;
@@ -11,41 +12,28 @@ namespace BussinessLogic
     public class ClsDbExplorer
     {
 
-        public string DbName { get; set; }
+        public static string DbName { get; set; }
 
-        public string TableName { get; set; }
-
-        public ClsDbExplorer()
-        {
-
-            this.DbName = null;
-            this.TableName = null;
-        }
-
-        public ClsDbExplorer(string dbName , string tableName)
-        {
-
-            this.DbName = dbName;
-            this.TableName = tableName;
-        }
-
+        public static string TableName { get; set; }
+        
+        public static string ServerName { get; set; }
 
         public static DataTable Databses()
         {
 
-            return ClsDatabaseExplorer.GetAllDataBases();
+            return ClsDatabaseExplorer.GetAllDataBases(ServerName , DbName);
         }
 
 
         public static DataTable TablesInsideTheSelectedDB(string DbName)
         {
 
-            return ClsDatabaseExplorer.GetTables(DbName);
+            return ClsDatabaseExplorer.GetTables(ServerName,DbName);
         }
 
-        public static DataTable TableInformation(string DbNme , string Table)
+        public static DataTable TableInformation()
         {
-            return ClsDatabaseExplorer.GetTableInformation(DbNme, Table);
+            return ClsDatabaseExplorer.GetTableInformation(ServerName, DbName, TableName);
         }
 
     }

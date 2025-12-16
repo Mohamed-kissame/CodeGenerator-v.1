@@ -6,20 +6,32 @@ using System.Linq;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace DataSet
 {
     public class ClsDatabaseExplorer
     {
 
-        public SqlConnection ConnectToDatabase(string dbName)
-        {
-            string cs = $"Server=.;Database={dbName};Integrated Security=True;";
-            return new SqlConnection(cs);
+        private static SqlConnection ConnectToDatabase(string servername , string dbName) {
+
+            SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
+
+
+            builder.DataSource = servername;
+            builder.InitialCatalog = dbName;
+            builder.IntegratedSecurity = true;
+
+            
+
+            string connectionString = builder.ToString();
+
+            return new SqlConnection(connectionString); 
+        
+        
         }
 
-
-        public static DataTable GetAllDataBases()
+        public static DataTable GetAllDataBases(string servername , string dbname)
         {
 
             DataTable db = new DataTable();
@@ -48,7 +60,7 @@ namespace DataSet
                         }
 
                     }
-                    catch (Exception ex) { db = null; }
+                    catch (Exception ex) { Console.WriteLine("error message : " + ex.Message); db = null; }
 
 
                 }
@@ -57,16 +69,16 @@ namespace DataSet
             return db;
         }
 
-        public static DataTable GetTables(string DbName)
+        public static DataTable GetTables(string Servername ,string DbName)
         {
 
             DataTable table = new DataTable();
 
-            using(SqlConnection connection = new SqlConnection(ClsConectionString.ConnectionString))
+            using(SqlConnection connection = ConnectToDatabase(Servername, DbName))
             {
 
 
-                string Query = $"select tables.name from {DbName}.sys.tables ";
+                string Query = "select tables.name from sys.tables ";
 
                 using(SqlCommand command = new SqlCommand(Query, connection))
                 {
@@ -84,7 +96,7 @@ namespace DataSet
                                 table.Load(reader);
                         }
 
-                    }catch(Exception ex) { table = null; }
+                    }catch(Exception ex) { Console.WriteLine("error message : " + ex.Message); table = null; }
                 }
 
 
@@ -95,30 +107,31 @@ namespace DataSet
 
         }
 
-        public static DataTable GetTableInformation(string DbName , string TableName)
+        public static DataTable GetTableInformation(string ServerName ,string DbName , string TableName)
         {
 
             DataTable Info = new DataTable();
 
 
-            using(SqlConnection connection = new SqlConnection(ClsConectionString.ConnectionString))
+            using (SqlConnection connection = ConnectToDatabase(ServerName, DbName))
             {
 
                 string Query = $@"SELECT c.name AS ColumnName, t.name AS DataType
-                                      FROM {DbName}.sys.columns c
-                                      JOIN {DbName}.sys.types t ON c.user_type_id = t.user_type_id
-                                      WHERE c.object_id = OBJECT_ID('{DbName}.dbo.{TableName}')";
+                                      FROM sys.columns c
+                                      JOIN sys.types t ON c.user_type_id = t.user_type_id
+                                      WHERE c.object_id = OBJECT_ID(@TableName)";
 
 
-                using(SqlCommand command = new SqlCommand(Query , connection)) {
+                using (SqlCommand command = new SqlCommand(Query, connection)) {
 
+                    command.Parameters.AddWithValue("@TableName", TableName);
 
                     try
                     {
 
                         connection.Open();
 
-                        using(SqlDataReader reader = command.ExecuteReader())
+                        using (SqlDataReader reader = command.ExecuteReader())
                         {
 
                             if (reader.HasRows)
@@ -127,7 +140,7 @@ namespace DataSet
                             }
 
                         }
-                    }catch(Exception ex) { Info = null; }
+                    } catch (Exception ex) { Console.WriteLine("error message : " + ex.Message); Info = null; }
 
                 }
 

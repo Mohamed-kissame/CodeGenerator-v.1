@@ -15,7 +15,17 @@ namespace DataSet
 
         private static string GenerateConnectionToServer(string ServerName , string UserName , string Password)
         {
-           return $"Server={ServerName};User Id={UserName};Password={Password};Initial Catalog=master";
+
+            SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
+
+            builder.InitialCatalog = "master";
+            builder.DataSource = ServerName;
+            builder.UserID = UserName;
+            builder.Password = Password;
+            builder.InitialCatalog = "master";
+
+            return builder.ToString();
+
 
         }
 
@@ -46,6 +56,7 @@ namespace DataSet
 
             } catch (Exception ex)
             {
+                Console.WriteLine("error message : " + ex.Message);
                 isConnected = false;
             }
 

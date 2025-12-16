@@ -87,7 +87,7 @@ namespace CodeGeneratorDAL
         {
             
 
-            _dtTableInformation = ClsDbExplorer.TableInformation(cbDataChose.SelectedItem.ToString(), cbTableChose.SelectedItem.ToString());
+            _dtTableInformation = ClsDbExplorer.TableInformation();
 
            
             dgv.DataSource = _dtTableInformation;
@@ -178,7 +178,7 @@ namespace CodeGeneratorDAL
                 
                 lbldbName.Text = cbDataChose.SelectedItem.ToString();
 
-                
+                ClsDbExplorer.DbName = cbDataChose.SelectedItem.ToString();
                 cbTableChose.Items.Clear();
                 FillTables(cbDataChose.SelectedItem.ToString());
                 cbTableChose.SelectedIndex = 0;
@@ -195,7 +195,15 @@ namespace CodeGeneratorDAL
 
         private void cbTableChose_SelectedValueChanged(object sender, EventArgs e)
         {
+            ClsDbExplorer.TableName = cbTableChose.SelectedItem.ToString();
             LoadTableInformation();
+        }
+
+        private void checkAddNew_CheckedChanged(object sender, EventArgs e)
+        {
+
+            checkAddNew.Enabled = true ? txtMethodAdd.Enabled = true : txtMethodAdd.Enabled = false;
+
         }
     }
 }

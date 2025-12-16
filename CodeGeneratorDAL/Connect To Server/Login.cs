@@ -108,8 +108,9 @@ namespace CodeGeneratorDAL
                     LoginInfo.RememberLoginServerInfo("", "", "");
                 }
 
-
-                    LoginInfo.Set(connection);
+               
+                LoginInfo.Set(connection);
+                ClsDbExplorer.ServerName = LoginInfo.SelectedLoginInfo.ServerName;
                 this.Hide();
                 CodeGenerator Start = new CodeGenerator(this);
                 Start.ShowDialog();
