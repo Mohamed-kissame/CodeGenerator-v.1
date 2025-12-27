@@ -52,25 +52,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CodeGenerator.cs">
+    <Compile Include="Forms\mainForm\CodeGenerator.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CodeGenerator.Designer.cs">
+    <Compile Include="Forms\mainForm\CodeGenerator.Designer.cs">
       <DependentUpon>CodeGenerator.cs</DependentUpon>
     </Compile>
-    <Compile Include="Connect To Server\Login.cs">
+    <Compile Include="Forms\Connect To Server\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Connect To Server\Login.Designer.cs">
+    <Compile Include="Forms\Connect To Server\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="HelpClasses\LoginInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="CodeGenerator.resx">
+    <EmbeddedResource Include="Forms\mainForm\CodeGenerator.resx">
       <DependentUpon>CodeGenerator.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Connect To Server\Login.resx">
+    <EmbeddedResource Include="Forms\Connect To Server\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

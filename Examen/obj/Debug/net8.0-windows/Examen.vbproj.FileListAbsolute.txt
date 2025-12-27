@@ -1,0 +1,17 @@
+C:\Users\mkiss\OneDrive\Bureau\Projects\CodeGenerator\Examen\bin\Debug\net8.0-windows\Examen.exe
+C:\Users\mkiss\OneDrive\Bureau\Projects\CodeGenerator\Examen\bin\Debug\net8.0-windows\Examen.deps.json
+C:\Users\mkiss\OneDrive\Bureau\Projects\CodeGenerator\Examen\bin\Debug\net8.0-windows\Examen.runtimeconfig.json
+C:\Users\mkiss\OneDrive\Bureau\Projects\CodeGenerator\Examen\bin\Debug\net8.0-windows\Examen.dll
+C:\Users\mkiss\OneDrive\Bureau\Projects\CodeGenerator\Examen\bin\Debug\net8.0-windows\Examen.pdb
+C:\Users\mkiss\OneDrive\Bureau\Projects\CodeGenerator\Examen\obj\Debug\net8.0-windows\Examen.Form1.resources
+C:\Users\mkiss\OneDrive\Bureau\Projects\CodeGenerator\Examen\obj\Debug\net8.0-windows\Examen.vbproj.GenerateResource.cache
+C:\Users\mkiss\OneDrive\Bureau\Projects\CodeGenerator\Examen\obj\Debug\net8.0-windows\Examen.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mkiss\OneDrive\Bureau\Projects\CodeGenerator\Examen\obj\Debug\net8.0-windows\Examen.AssemblyInfoInputs.cache
+C:\Users\mkiss\OneDrive\Bureau\Projects\CodeGenerator\Examen\obj\Debug\net8.0-windows\Examen.AssemblyInfo.vb
+C:\Users\mkiss\OneDrive\Bureau\Projects\CodeGenerator\Examen\obj\Debug\net8.0-windows\Examen.vbproj.CoreCompileInputs.cache
+C:\Users\mkiss\OneDrive\Bureau\Projects\CodeGenerator\Examen\obj\Debug\net8.0-windows\Examen.sourcelink.json
+C:\Users\mkiss\OneDrive\Bureau\Projects\CodeGenerator\Examen\obj\Debug\net8.0-windows\Examen.dll
+C:\Users\mkiss\OneDrive\Bureau\Projects\CodeGenerator\Examen\obj\Debug\net8.0-windows\refint\Examen.dll
+C:\Users\mkiss\OneDrive\Bureau\Projects\CodeGenerator\Examen\obj\Debug\net8.0-windows\Examen.pdb
+C:\Users\mkiss\OneDrive\Bureau\Projects\CodeGenerator\Examen\obj\Debug\net8.0-windows\Examen.genruntimeconfig.cache
+C:\Users\mkiss\OneDrive\Bureau\Projects\CodeGenerator\Examen\obj\Debug\net8.0-windows\ref\Examen.dll

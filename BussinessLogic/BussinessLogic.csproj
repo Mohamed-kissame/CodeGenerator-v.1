@@ -41,8 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClsDbExplorer.cs" />
-    <Compile Include="ClsServerConnection.cs" />
+    <Compile Include="CodeGeneration\clsCodeGeneration.cs" />
+    <Compile Include="CodeGeneration\GenerationSettings.cs" />
+    <Compile Include="Core\ClsDbExplorer.cs" />
+    <Compile Include="Core\ClsServerConnection.cs" />
+    <Compile Include="Mapping\ClsSqlTypeMapper.cs" />
+    <Compile Include="Models\ColumnModels\ColumnInfoModel.cs" />
+    <Compile Include="Models\DbModels\DatabaseModel.cs" />
+    <Compile Include="Models\TableModels\TableInfoModel.cs" />
+    <Compile Include="Models\TableModels\TableListModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

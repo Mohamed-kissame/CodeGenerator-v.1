@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
@@ -66,23 +66,27 @@
             this.guna2Separator3 = new Guna.UI2.WinForms.Guna2Separator();
             this.label10 = new System.Windows.Forms.Label();
             this.btnCopy = new Guna.UI2.WinForms.Guna2Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.rtbGeneratedCode = new System.Windows.Forms.RichTextBox();
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.guna2Separator2 = new Guna.UI2.WinForms.Guna2Separator();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
-            this.txtMethodListAll = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtMethodGetAll = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtMethodGetById = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtMethodDelete = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtMethodUpdate = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtMethodAdd = new Guna.UI2.WinForms.Guna2TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.checkList = new Guna.UI2.WinForms.Guna2CheckBox();
             this.checkGetAll = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.checkGetByID = new Guna.UI2.WinForms.Guna2CheckBox();
             this.CheckDelete = new Guna.UI2.WinForms.Guna2CheckBox();
             this.checkUpdate = new Guna.UI2.WinForms.Guna2CheckBox();
             this.checkAddNew = new Guna.UI2.WinForms.Guna2CheckBox();
             this.btnGenerate = new Guna.UI2.WinForms.Guna2Button();
             this.btnClear = new Guna.UI2.WinForms.Guna2Button();
+            this.txtNameSpace = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtClassName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.guna2Separator4 = new Guna.UI2.WinForms.Guna2Separator();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel2.SuspendLayout();
@@ -208,38 +212,38 @@
             this.guna2Panel3.Controls.Add(this.cbDataChose);
             this.guna2Panel3.Location = new System.Drawing.Point(0, 66);
             this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(332, 696);
+            this.guna2Panel3.Size = new System.Drawing.Size(420, 696);
             this.guna2Panel3.TabIndex = 2;
             // 
             // dgv
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgv.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.dgv.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.dgv.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dgv.ColumnHeadersHeight = 7;
             this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv.DefaultCellStyle = dataGridViewCellStyle9;
             this.dgv.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv.Location = new System.Drawing.Point(12, 263);
             this.dgv.Name = "dgv";
             this.dgv.RowHeadersVisible = false;
-            this.dgv.Size = new System.Drawing.Size(304, 419);
+            this.dgv.Size = new System.Drawing.Size(395, 419);
             this.dgv.TabIndex = 7;
             this.dgv.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgv.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -278,7 +282,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(12, 146);
+            this.label4.Location = new System.Drawing.Point(12, 136);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(141, 20);
             this.label4.TabIndex = 5;
@@ -298,9 +302,9 @@
             this.cbTableChose.ItemHeight = 30;
             this.cbTableChose.Items.AddRange(new object[] {
             "Please select a Table"});
-            this.cbTableChose.Location = new System.Drawing.Point(12, 183);
+            this.cbTableChose.Location = new System.Drawing.Point(12, 177);
             this.cbTableChose.Name = "cbTableChose";
-            this.cbTableChose.Size = new System.Drawing.Size(304, 36);
+            this.cbTableChose.Size = new System.Drawing.Size(356, 36);
             this.cbTableChose.StartIndex = 0;
             this.cbTableChose.TabIndex = 4;
             this.cbTableChose.SelectedValueChanged += new System.EventHandler(this.cbTableChose_SelectedValueChanged);
@@ -332,7 +336,7 @@
             "Please select a database"});
             this.cbDataChose.Location = new System.Drawing.Point(12, 72);
             this.cbDataChose.Name = "cbDataChose";
-            this.cbDataChose.Size = new System.Drawing.Size(304, 36);
+            this.cbDataChose.Size = new System.Drawing.Size(356, 36);
             this.cbDataChose.StartIndex = 0;
             this.cbDataChose.TabIndex = 0;
             this.cbDataChose.SelectedValueChanged += new System.EventHandler(this.cbDataChose_SelectedValueChanged);
@@ -356,9 +360,9 @@
             this.guna2GroupBox1.CustomBorderColor = System.Drawing.Color.CadetBlue;
             this.guna2GroupBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.Black;
-            this.guna2GroupBox1.Location = new System.Drawing.Point(338, 66);
+            this.guna2GroupBox1.Location = new System.Drawing.Point(426, 66);
             this.guna2GroupBox1.Name = "guna2GroupBox1";
-            this.guna2GroupBox1.Size = new System.Drawing.Size(1236, 108);
+            this.guna2GroupBox1.Size = new System.Drawing.Size(1148, 108);
             this.guna2GroupBox1.TabIndex = 3;
             this.guna2GroupBox1.Text = "Information";
             // 
@@ -503,10 +507,10 @@
             this.guna2Panel4.Controls.Add(this.guna2Separator3);
             this.guna2Panel4.Controls.Add(this.label10);
             this.guna2Panel4.Controls.Add(this.btnCopy);
-            this.guna2Panel4.Controls.Add(this.richTextBox1);
-            this.guna2Panel4.Location = new System.Drawing.Point(338, 180);
+            this.guna2Panel4.Controls.Add(this.rtbGeneratedCode);
+            this.guna2Panel4.Location = new System.Drawing.Point(426, 180);
             this.guna2Panel4.Name = "guna2Panel4";
-            this.guna2Panel4.Size = new System.Drawing.Size(907, 582);
+            this.guna2Panel4.Size = new System.Drawing.Size(819, 582);
             this.guna2Panel4.TabIndex = 4;
             // 
             // guna2Separator3
@@ -514,7 +518,7 @@
             this.guna2Separator3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2Separator3.Location = new System.Drawing.Point(10, 45);
             this.guna2Separator3.Name = "guna2Separator3";
-            this.guna2Separator3.Size = new System.Drawing.Size(890, 10);
+            this.guna2Separator3.Size = new System.Drawing.Size(795, 18);
             this.guna2Separator3.TabIndex = 19;
             // 
             // label10
@@ -522,7 +526,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label10.Location = new System.Drawing.Point(24, 21);
+            this.label10.Location = new System.Drawing.Point(24, 11);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(181, 17);
             this.label10.TabIndex = 8;
@@ -541,34 +545,39 @@
             this.btnCopy.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnCopy.ForeColor = System.Drawing.Color.White;
             this.btnCopy.Image = global::CodeGeneratorDAL.Properties.Resources.copy;
-            this.btnCopy.Location = new System.Drawing.Point(771, 10);
+            this.btnCopy.Location = new System.Drawing.Point(681, 11);
             this.btnCopy.Name = "btnCopy";
             this.btnCopy.Size = new System.Drawing.Size(124, 28);
             this.btnCopy.TabIndex = 7;
             this.btnCopy.Text = "Copy";
+            this.btnCopy.Click += new System.EventHandler(this.btnCopy_Click);
             // 
-            // richTextBox1
+            // rtbGeneratedCode
             // 
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.richTextBox1.Location = new System.Drawing.Point(3, 69);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(901, 510);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "";
+            this.rtbGeneratedCode.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.rtbGeneratedCode.Location = new System.Drawing.Point(3, 69);
+            this.rtbGeneratedCode.Name = "rtbGeneratedCode";
+            this.rtbGeneratedCode.Size = new System.Drawing.Size(813, 510);
+            this.rtbGeneratedCode.TabIndex = 0;
+            this.rtbGeneratedCode.Text = "";
             // 
             // guna2ShadowPanel1
             // 
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel1.Controls.Add(this.guna2Separator4);
+            this.guna2ShadowPanel1.Controls.Add(this.label13);
+            this.guna2ShadowPanel1.Controls.Add(this.txtClassName);
+            this.guna2ShadowPanel1.Controls.Add(this.txtNameSpace);
             this.guna2ShadowPanel1.Controls.Add(this.guna2Separator2);
             this.guna2ShadowPanel1.Controls.Add(this.guna2Separator1);
-            this.guna2ShadowPanel1.Controls.Add(this.txtMethodListAll);
             this.guna2ShadowPanel1.Controls.Add(this.txtMethodGetAll);
+            this.guna2ShadowPanel1.Controls.Add(this.txtMethodGetById);
             this.guna2ShadowPanel1.Controls.Add(this.txtMethodDelete);
             this.guna2ShadowPanel1.Controls.Add(this.txtMethodUpdate);
             this.guna2ShadowPanel1.Controls.Add(this.txtMethodAdd);
             this.guna2ShadowPanel1.Controls.Add(this.label11);
-            this.guna2ShadowPanel1.Controls.Add(this.checkList);
             this.guna2ShadowPanel1.Controls.Add(this.checkGetAll);
+            this.guna2ShadowPanel1.Controls.Add(this.checkGetByID);
             this.guna2ShadowPanel1.Controls.Add(this.CheckDelete);
             this.guna2ShadowPanel1.Controls.Add(this.checkUpdate);
             this.guna2ShadowPanel1.Controls.Add(this.checkAddNew);
@@ -579,46 +588,22 @@
             this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.CadetBlue;
             this.guna2ShadowPanel1.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.ForwardDiagonal;
-            this.guna2ShadowPanel1.Size = new System.Drawing.Size(323, 558);
+            this.guna2ShadowPanel1.Size = new System.Drawing.Size(323, 569);
             this.guna2ShadowPanel1.TabIndex = 7;
             // 
             // guna2Separator2
             // 
-            this.guna2Separator2.Location = new System.Drawing.Point(15, 360);
+            this.guna2Separator2.Location = new System.Drawing.Point(15, 284);
             this.guna2Separator2.Name = "guna2Separator2";
             this.guna2Separator2.Size = new System.Drawing.Size(289, 10);
             this.guna2Separator2.TabIndex = 18;
             // 
             // guna2Separator1
             // 
-            this.guna2Separator1.Location = new System.Drawing.Point(15, 73);
+            this.guna2Separator1.Location = new System.Drawing.Point(15, 35);
             this.guna2Separator1.Name = "guna2Separator1";
             this.guna2Separator1.Size = new System.Drawing.Size(289, 10);
             this.guna2Separator1.TabIndex = 9;
-            // 
-            // txtMethodListAll
-            // 
-            this.txtMethodListAll.Animated = true;
-            this.txtMethodListAll.BorderColor = System.Drawing.Color.Silver;
-            this.txtMethodListAll.BorderRadius = 5;
-            this.txtMethodListAll.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtMethodListAll.DefaultText = "";
-            this.txtMethodListAll.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtMethodListAll.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtMethodListAll.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMethodListAll.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMethodListAll.Enabled = false;
-            this.txtMethodListAll.FillColor = System.Drawing.Color.Ivory;
-            this.txtMethodListAll.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMethodListAll.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMethodListAll.ForeColor = System.Drawing.Color.White;
-            this.txtMethodListAll.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMethodListAll.Location = new System.Drawing.Point(108, 295);
-            this.txtMethodListAll.Name = "txtMethodListAll";
-            this.txtMethodListAll.PlaceholderText = "Method Name";
-            this.txtMethodListAll.SelectedText = "";
-            this.txtMethodListAll.Size = new System.Drawing.Size(184, 25);
-            this.txtMethodListAll.TabIndex = 17;
             // 
             // txtMethodGetAll
             // 
@@ -634,15 +619,39 @@
             this.txtMethodGetAll.Enabled = false;
             this.txtMethodGetAll.FillColor = System.Drawing.Color.Ivory;
             this.txtMethodGetAll.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMethodGetAll.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMethodGetAll.ForeColor = System.Drawing.Color.White;
+            this.txtMethodGetAll.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtMethodGetAll.ForeColor = System.Drawing.Color.Black;
             this.txtMethodGetAll.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMethodGetAll.Location = new System.Drawing.Point(108, 248);
+            this.txtMethodGetAll.Location = new System.Drawing.Point(108, 239);
             this.txtMethodGetAll.Name = "txtMethodGetAll";
             this.txtMethodGetAll.PlaceholderText = "Method Name";
             this.txtMethodGetAll.SelectedText = "";
             this.txtMethodGetAll.Size = new System.Drawing.Size(184, 25);
-            this.txtMethodGetAll.TabIndex = 16;
+            this.txtMethodGetAll.TabIndex = 17;
+            // 
+            // txtMethodGetById
+            // 
+            this.txtMethodGetById.Animated = true;
+            this.txtMethodGetById.BorderColor = System.Drawing.Color.Silver;
+            this.txtMethodGetById.BorderRadius = 5;
+            this.txtMethodGetById.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtMethodGetById.DefaultText = "";
+            this.txtMethodGetById.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtMethodGetById.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtMethodGetById.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMethodGetById.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMethodGetById.Enabled = false;
+            this.txtMethodGetById.FillColor = System.Drawing.Color.Ivory;
+            this.txtMethodGetById.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMethodGetById.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtMethodGetById.ForeColor = System.Drawing.Color.Black;
+            this.txtMethodGetById.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMethodGetById.Location = new System.Drawing.Point(108, 192);
+            this.txtMethodGetById.Name = "txtMethodGetById";
+            this.txtMethodGetById.PlaceholderText = "Method Name";
+            this.txtMethodGetById.SelectedText = "";
+            this.txtMethodGetById.Size = new System.Drawing.Size(184, 25);
+            this.txtMethodGetById.TabIndex = 16;
             // 
             // txtMethodDelete
             // 
@@ -658,10 +667,10 @@
             this.txtMethodDelete.Enabled = false;
             this.txtMethodDelete.FillColor = System.Drawing.Color.Ivory;
             this.txtMethodDelete.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMethodDelete.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMethodDelete.ForeColor = System.Drawing.Color.White;
+            this.txtMethodDelete.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtMethodDelete.ForeColor = System.Drawing.Color.Black;
             this.txtMethodDelete.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMethodDelete.Location = new System.Drawing.Point(108, 200);
+            this.txtMethodDelete.Location = new System.Drawing.Point(108, 144);
             this.txtMethodDelete.Name = "txtMethodDelete";
             this.txtMethodDelete.PlaceholderText = "Method Name";
             this.txtMethodDelete.SelectedText = "";
@@ -682,10 +691,10 @@
             this.txtMethodUpdate.Enabled = false;
             this.txtMethodUpdate.FillColor = System.Drawing.Color.Ivory;
             this.txtMethodUpdate.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMethodUpdate.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMethodUpdate.ForeColor = System.Drawing.Color.White;
+            this.txtMethodUpdate.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtMethodUpdate.ForeColor = System.Drawing.Color.Black;
             this.txtMethodUpdate.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMethodUpdate.Location = new System.Drawing.Point(108, 158);
+            this.txtMethodUpdate.Location = new System.Drawing.Point(108, 102);
             this.txtMethodUpdate.Name = "txtMethodUpdate";
             this.txtMethodUpdate.PlaceholderText = "Method Name";
             this.txtMethodUpdate.SelectedText = "";
@@ -706,10 +715,10 @@
             this.txtMethodAdd.Enabled = false;
             this.txtMethodAdd.FillColor = System.Drawing.Color.Ivory;
             this.txtMethodAdd.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMethodAdd.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMethodAdd.ForeColor = System.Drawing.Color.White;
+            this.txtMethodAdd.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtMethodAdd.ForeColor = System.Drawing.Color.Black;
             this.txtMethodAdd.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMethodAdd.Location = new System.Drawing.Point(108, 109);
+            this.txtMethodAdd.Location = new System.Drawing.Point(108, 53);
             this.txtMethodAdd.Name = "txtMethodAdd";
             this.txtMethodAdd.PlaceholderText = "Method Name";
             this.txtMethodAdd.SelectedText = "";
@@ -721,29 +730,11 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Arial", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label11.Location = new System.Drawing.Point(28, 47);
+            this.label11.Location = new System.Drawing.Point(31, 9);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(273, 23);
             this.label11.TabIndex = 12;
             this.label11.Text = "Chose Your Crud Operation ";
-            // 
-            // checkList
-            // 
-            this.checkList.AutoSize = true;
-            this.checkList.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.checkList.CheckedState.BorderRadius = 0;
-            this.checkList.CheckedState.BorderThickness = 0;
-            this.checkList.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.checkList.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkList.Location = new System.Drawing.Point(15, 295);
-            this.checkList.Name = "checkList";
-            this.checkList.Size = new System.Drawing.Size(65, 20);
-            this.checkList.TabIndex = 11;
-            this.checkList.Text = "ListAll";
-            this.checkList.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.checkList.UncheckedState.BorderRadius = 0;
-            this.checkList.UncheckedState.BorderThickness = 0;
-            this.checkList.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             // 
             // checkGetAll
             // 
@@ -752,16 +743,35 @@
             this.checkGetAll.CheckedState.BorderRadius = 0;
             this.checkGetAll.CheckedState.BorderThickness = 0;
             this.checkGetAll.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.checkGetAll.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkGetAll.Location = new System.Drawing.Point(15, 248);
+            this.checkGetAll.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkGetAll.Location = new System.Drawing.Point(15, 239);
             this.checkGetAll.Name = "checkGetAll";
-            this.checkGetAll.Size = new System.Drawing.Size(68, 20);
-            this.checkGetAll.TabIndex = 10;
+            this.checkGetAll.Size = new System.Drawing.Size(65, 20);
+            this.checkGetAll.TabIndex = 11;
             this.checkGetAll.Text = "GetAll";
             this.checkGetAll.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.checkGetAll.UncheckedState.BorderRadius = 0;
             this.checkGetAll.UncheckedState.BorderThickness = 0;
             this.checkGetAll.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            // 
+            // checkGetByID
+            // 
+            this.checkGetByID.AutoSize = true;
+            this.checkGetByID.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.checkGetByID.CheckedState.BorderRadius = 0;
+            this.checkGetByID.CheckedState.BorderThickness = 0;
+            this.checkGetByID.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.checkGetByID.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
+            this.checkGetByID.Location = new System.Drawing.Point(15, 192);
+            this.checkGetByID.Name = "checkGetByID";
+            this.checkGetByID.Size = new System.Drawing.Size(81, 20);
+            this.checkGetByID.TabIndex = 10;
+            this.checkGetByID.Text = "GetById";
+            this.checkGetByID.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.checkGetByID.UncheckedState.BorderRadius = 0;
+            this.checkGetByID.UncheckedState.BorderThickness = 0;
+            this.checkGetByID.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.checkGetByID.CheckedChanged += new System.EventHandler(this.checkGetAll_CheckedChanged);
             // 
             // CheckDelete
             // 
@@ -771,7 +781,7 @@
             this.CheckDelete.CheckedState.BorderThickness = 0;
             this.CheckDelete.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.CheckDelete.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CheckDelete.Location = new System.Drawing.Point(15, 200);
+            this.CheckDelete.Location = new System.Drawing.Point(15, 144);
             this.CheckDelete.Name = "CheckDelete";
             this.CheckDelete.Size = new System.Drawing.Size(72, 20);
             this.CheckDelete.TabIndex = 9;
@@ -789,7 +799,7 @@
             this.checkUpdate.CheckedState.BorderThickness = 0;
             this.checkUpdate.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.checkUpdate.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkUpdate.Location = new System.Drawing.Point(15, 158);
+            this.checkUpdate.Location = new System.Drawing.Point(15, 102);
             this.checkUpdate.Name = "checkUpdate";
             this.checkUpdate.Size = new System.Drawing.Size(76, 20);
             this.checkUpdate.TabIndex = 8;
@@ -807,7 +817,7 @@
             this.checkAddNew.CheckedState.BorderThickness = 0;
             this.checkAddNew.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.checkAddNew.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkAddNew.Location = new System.Drawing.Point(15, 112);
+            this.checkAddNew.Location = new System.Drawing.Point(15, 56);
             this.checkAddNew.Name = "checkAddNew";
             this.checkAddNew.Size = new System.Drawing.Size(87, 20);
             this.checkAddNew.TabIndex = 7;
@@ -816,7 +826,6 @@
             this.checkAddNew.UncheckedState.BorderRadius = 0;
             this.checkAddNew.UncheckedState.BorderThickness = 0;
             this.checkAddNew.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.checkAddNew.CheckedChanged += new System.EventHandler(this.checkAddNew_CheckedChanged);
             // 
             // btnGenerate
             // 
@@ -830,11 +839,12 @@
             this.btnGenerate.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnGenerate.ForeColor = System.Drawing.Color.White;
             this.btnGenerate.Image = global::CodeGeneratorDAL.Properties.Resources.add;
-            this.btnGenerate.Location = new System.Drawing.Point(74, 413);
+            this.btnGenerate.Location = new System.Drawing.Point(74, 451);
             this.btnGenerate.Name = "btnGenerate";
             this.btnGenerate.Size = new System.Drawing.Size(180, 45);
             this.btnGenerate.TabIndex = 5;
             this.btnGenerate.Text = "Generate DAL";
+            this.btnGenerate.Click += new System.EventHandler(this.btnGenerate_Click);
             // 
             // btnClear
             // 
@@ -848,11 +858,76 @@
             this.btnClear.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnClear.ForeColor = System.Drawing.Color.White;
             this.btnClear.Image = global::CodeGeneratorDAL.Properties.Resources.broom;
-            this.btnClear.Location = new System.Drawing.Point(74, 482);
+            this.btnClear.Location = new System.Drawing.Point(74, 513);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(180, 45);
             this.btnClear.TabIndex = 6;
             this.btnClear.Text = "Clear";
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
+            // txtNameSpace
+            // 
+            this.txtNameSpace.Animated = true;
+            this.txtNameSpace.BorderColor = System.Drawing.Color.Silver;
+            this.txtNameSpace.BorderRadius = 5;
+            this.txtNameSpace.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNameSpace.DefaultText = "";
+            this.txtNameSpace.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtNameSpace.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtNameSpace.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNameSpace.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNameSpace.FillColor = System.Drawing.Color.Ivory;
+            this.txtNameSpace.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNameSpace.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtNameSpace.ForeColor = System.Drawing.Color.Black;
+            this.txtNameSpace.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNameSpace.Location = new System.Drawing.Point(35, 343);
+            this.txtNameSpace.Name = "txtNameSpace";
+            this.txtNameSpace.PlaceholderText = "Give an Name for The namespace\r\n\r\n";
+            this.txtNameSpace.SelectedText = "";
+            this.txtNameSpace.Size = new System.Drawing.Size(257, 25);
+            this.txtNameSpace.TabIndex = 19;
+            // 
+            // txtClassName
+            // 
+            this.txtClassName.Animated = true;
+            this.txtClassName.BorderColor = System.Drawing.Color.Silver;
+            this.txtClassName.BorderRadius = 5;
+            this.txtClassName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtClassName.DefaultText = "";
+            this.txtClassName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtClassName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtClassName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtClassName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtClassName.FillColor = System.Drawing.Color.Ivory;
+            this.txtClassName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtClassName.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtClassName.ForeColor = System.Drawing.Color.Black;
+            this.txtClassName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtClassName.Location = new System.Drawing.Point(35, 392);
+            this.txtClassName.Name = "txtClassName";
+            this.txtClassName.PlaceholderText = "Give an Name For The Class";
+            this.txtClassName.SelectedText = "";
+            this.txtClassName.Size = new System.Drawing.Size(257, 25);
+            this.txtClassName.TabIndex = 20;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Arial", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label13.Location = new System.Drawing.Point(31, 307);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(92, 23);
+            this.label13.TabIndex = 21;
+            this.label13.Text = "Settings ";
+            // 
+            // guna2Separator4
+            // 
+            this.guna2Separator4.Location = new System.Drawing.Point(15, 423);
+            this.guna2Separator4.Name = "guna2Separator4";
+            this.guna2Separator4.Size = new System.Drawing.Size(289, 10);
+            this.guna2Separator4.TabIndex = 22;
             // 
             // CodeGenerator
             // 
@@ -927,12 +1002,12 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
         private Guna.UI2.WinForms.Guna2Button btnClear;
         private Guna.UI2.WinForms.Guna2Button btnGenerate;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox rtbGeneratedCode;
         private System.Windows.Forms.Label label10;
         private Guna.UI2.WinForms.Guna2Button btnCopy;
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel1;
-        private Guna.UI2.WinForms.Guna2CheckBox checkList;
         private Guna.UI2.WinForms.Guna2CheckBox checkGetAll;
+        private Guna.UI2.WinForms.Guna2CheckBox checkGetByID;
         private Guna.UI2.WinForms.Guna2CheckBox CheckDelete;
         private Guna.UI2.WinForms.Guna2CheckBox checkUpdate;
         private Guna.UI2.WinForms.Guna2CheckBox checkAddNew;
@@ -940,13 +1015,17 @@
         private Guna.UI2.WinForms.Guna2TextBox txtMethodDelete;
         private Guna.UI2.WinForms.Guna2TextBox txtMethodUpdate;
         private Guna.UI2.WinForms.Guna2TextBox txtMethodAdd;
-        private Guna.UI2.WinForms.Guna2TextBox txtMethodListAll;
         private Guna.UI2.WinForms.Guna2TextBox txtMethodGetAll;
+        private Guna.UI2.WinForms.Guna2TextBox txtMethodGetById;
         private System.Windows.Forms.Label label12;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox5;
         private System.Windows.Forms.Label lbldbName;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator2;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator3;
+        private Guna.UI2.WinForms.Guna2Separator guna2Separator4;
+        private System.Windows.Forms.Label label13;
+        private Guna.UI2.WinForms.Guna2TextBox txtClassName;
+        private Guna.UI2.WinForms.Guna2TextBox txtNameSpace;
     }
 }

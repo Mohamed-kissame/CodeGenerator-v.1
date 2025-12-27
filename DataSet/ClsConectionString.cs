@@ -22,7 +22,7 @@ namespace DataSet
             builder.DataSource = ServerName;
             builder.UserID = UserName;
             builder.Password = Password;
-            builder.InitialCatalog = "master";
+      
 
             return builder.ToString();
 

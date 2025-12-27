@@ -31,7 +31,7 @@ namespace DataSet
         
         }
 
-        public static DataTable GetAllDataBases(string servername , string dbname)
+        public static DataTable GetAllDataBases()
         {
 
             DataTable db = new DataTable();
@@ -150,7 +150,63 @@ namespace DataSet
 
         }
 
-        
+        public static DataTable GetPrimaryKeys(string ServerName, string DbName, string TableName)
+        {
+            DataTable primaryKeys = new DataTable();
+
+            
+            primaryKeys.Columns.Add("ColumnName", typeof(string));
+            primaryKeys.Columns.Add("IsPrimaryKey", typeof(bool));
+
+            using (SqlConnection connection = ConnectToDatabase(ServerName, DbName))
+            {
+               
+                string query = @"
+            SELECT 
+                c.name AS ColumnName,
+                1 AS IsPrimaryKey
+            FROM sys.columns c
+            INNER JOIN sys.index_columns ic ON ic.object_id = c.object_id 
+                AND ic.column_id = c.column_id
+            INNER JOIN sys.indexes i ON i.object_id = ic.object_id 
+                AND i.index_id = ic.index_id
+            WHERE 
+                c.object_id = OBJECT_ID(@TableName)
+                AND i.is_primary_key = 1
+            ORDER BY ic.key_ordinal";
+
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@TableName", TableName);
+
+                    try
+                    {
+                        connection.Open();
+
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            if (reader.HasRows)
+                            {
+                                while (reader.Read())
+                                {
+                                    DataRow row = primaryKeys.NewRow();
+                                    row["ColumnName"] = reader["ColumnName"].ToString();
+                                    row["IsPrimaryKey"] = true;
+                                    primaryKeys.Rows.Add(row);
+                                }
+                            }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine("Error getting primary keys: " + ex.Message);
+                        
+                    }
+                }
+            }
+
+            return primaryKeys;
+        }
 
     }
 }
